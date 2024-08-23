@@ -1,6 +1,20 @@
 
 ### 1. Limpeza de Dados (`data_cleaning.py`)
 
+import pandas as pd
+
+def clean_data(df):
+    # Remove duplicatas
+    df = df.drop_duplicates()
+    # Preenche valores ausentes
+    df = df.fillna(method='ffill')
+    return df
+
+# Exemplo de uso
+df = pd.read_csv('data.csv')
+df_cleaned = clean_data(df)
+df_cleaned.to_csv('data_cleaned.csv', index=False)
+
 ### Script: `data_cleaning.py`
 Este script foi desenvolvido para realizar a limpeza dos dados brutos, removendo duplicatas e preenchendo valores ausentes.
 
@@ -24,18 +38,3 @@ Após a execução do script, o arquivo `data_cleaned.csv` foi gerado, contendo 
 #### Impacto no Projeto
 A limpeza dos dados foi crucial para evitar inconsistências nos resultados da análise. Sem esta etapa, os dados poderiam conter erros que afetariam negativamente a precisão das previsões e insights obtidos na fase de análise de dados.
 
-
-```python
-import pandas as pd
-
-def clean_data(df):
-    # Remove duplicatas
-    df = df.drop_duplicates()
-    # Preenche valores ausentes
-    df = df.fillna(method='ffill')
-    return df
-
-# Exemplo de uso
-df = pd.read_csv('data.csv')
-df_cleaned = clean_data(df)
-df_cleaned.to_csv('data_cleaned.csv', index=False)
