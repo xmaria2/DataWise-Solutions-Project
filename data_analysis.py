@@ -14,15 +14,20 @@ print(summary)
 
 
 ### Script: `data_analysis.py`
-Foi criado para realizar análises descritivas e estatísticas sobre os dados limpos.
+Foi criado para realizar análises descritivas e estatísticas 
+sobre os dados limpos.
     
 #### Objetivo
-O objetivo deste script é  identificar padrões, tendências, e fornecer um entendimento inicial sobre a distribuição e características dos dados.
+O objetivo deste script é  identificar padrões, tendências, e 
+fornecer um entendimento inicial sobre a distribuição
+e características dos dados.
     
 #### Uso no Projeto
-Após a limpeza dos dados com o data_cleaning.py, este script foi utilizado para analisar o conjunto de dados.
-Ele calculou estatísticas como média, mediana, desvio padrão, e identificou possíveis outliers. 
-Isso foi essencial para orientar as próximas etapas de análise e visualização
+Após a limpeza dos dados com o data_cleaning.py, este script 
+foi utilizado para analisaro conjunto de dados.
+Ele calculou estatísticas como média, mediana, desvio padrão, e 
+identificou possíveis outliers. Isso foi essencial para orientar 
+as próximas etapas de análise e visualização
 
 #### Descrição do Código
 Importação de Bibliotecas: O script utiliza a biblioteca pandas para manipulação de dados e análise estatística.
